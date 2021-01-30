@@ -1,0 +1,12 @@
+.cards {
+  height: 145px;
+  width: 100px;
+  margin-left: -20px;
+  border: 2px solid black;
+  grid-area: 1/1/2/2;
+}
+
+/* 
+#card-spot1 {
+  position: absolute;
+} */
