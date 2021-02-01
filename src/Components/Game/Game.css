@@ -1,0 +1,13 @@
+.cards {
+  height: 145px;
+  width: 100px;
+  margin-left: -20px;
+  border-radius: 5px;
+  grid-area: 1/1/2/2;
+}
+.cards:hover {
+  box-shadow: 0px 5px 40px -10px rgb(0, 0, 0);
+  transition: ease-in-out 0.25s;
+  border: none;
+  transform: translateY(-2rem);
+}
