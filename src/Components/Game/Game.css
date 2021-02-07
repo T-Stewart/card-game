@@ -1,7 +1,7 @@
 .cards {
   height: 145px;
   width: 100px;
-  margin-left: -20px;
+
   border-radius: 5px;
   grid-area: 1/1/2/2;
 }
@@ -10,4 +10,10 @@
   transition: ease-in-out 0.25s;
   border: none;
   transform: translateY(-2rem);
+}
+
+#card-container {
+  height: 145px;
+  width: 100px;
+  border: white 1px solid;
 }
