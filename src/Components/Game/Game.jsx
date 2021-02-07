@@ -45,13 +45,13 @@ export default class Game extends React.Component {
          };    
    };
 
-   //    addScore = () => {
-   //    this.newCard()
+      addScore = () => {
+      this.newCard()
 
-   //        this.setState({
-   //           currentScore: this.state.currentScore+ this.state.addScore[this.state.index+1]
-   //        }) 
-   // }
+          this.setState({
+             score: this.state.score+ this.state.addScore[this.state.index+1]
+          }) 
+   }
 
    score = () => {
       let scoreStart = [];
@@ -73,17 +73,17 @@ export default class Game extends React.Component {
       let newCards = Deck.slice(10,52)
 
         
-         newCards.map(({suit, image, score}, index) => {
+         
          if (this.state.newCard === true) {   
-            console.log("Hello")             
+            console.log(newCards[this.state.index].suit)             
             return(
-               <Card className="draggable" draggable>
-                  <img  className="cards" key={suit} src={image} value={score} id={`card-spot${index}`}alt=""/>
+               <Card className="draggable" draggable >
+                  <img  className="cards"  key={newCards[this.state.index].suit} src={newCards[this.state.index].image} value={newCards[this.state.index].score} id={`card-spot${this.state.index}`}alt=""/>
                </Card>
                            
                )
          }
-      })
+      
          
 
       
